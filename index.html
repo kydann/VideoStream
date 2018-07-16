@@ -3,7 +3,7 @@
 	<title>Video</title>
 </head>
 <body>
-	<video autoplay id="video"></video>
+	<video autoplay id="video" width="100%" height="auto"></video>
 	<canvas id='miCanvas' width='100%'></canvas>
     <script language="javascript" src="js/jquery-1.7.2.min.js"></script>
     <script language="javascript" src="js/fancywebsocket.js"></script>
@@ -19,7 +19,7 @@
 
 		if (navigator.getUserMedia) //si es compatible
 		{		
-			navigator.getUserMedia ({video:true, audio:false},	
+			navigator.getUserMedia ({video:true, audio:true},	
 			function(vid) 
 			{
 				bandera = 1;
